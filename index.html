@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AAROH: The Creator Forge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --accent:#76f70c;
+      --accent-soft:#eaffd2;
+      --text:#0f1720;
+      --muted:#5f6672;
+      --border:#e8edf3;
+      --bg:#ffffff;
+      --card:#ffffff;
+      --shadow:0 20px 60px rgba(0,0,0,0.06);
+      --radius:28px;
+      --max:1280px;
+    }
+    *{margin:0;padding:0;box-sizing:border-box;}
+    html{scroll-behavior:smooth;}
+    body{font-family:'Inter',sans-serif;background:#fff;color:var(--text);overflow-x:hidden;line-height:1.6;}
+    a{text-decoration:none;color:inherit;}
+    .container{width:min(92%,var(--max));margin:auto;}
+    header{position:sticky;top:0;z-index:999;background:rgba(255,255,255,.75);backdrop-filter:blur(18px);border-bottom:1px solid rgba(0,0,0,.04);}
+    nav{height:80px;display:flex;align-items:center;justify-content:space-between;}
+    .logo{font-size:1.1rem;font-weight:800;letter-spacing:-0.03em;display:flex;align-items:center;gap:12px;}
+    .logo-dot{width:12px;height:12px;border-radius:50%;background:var(--accent);box-shadow:0 0 30px rgba(118,247,12,.7);}
+    .nav-links{display:flex;gap:28px;align-items:center;}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 28px;border-radius:999px;font-weight:700;transition:.35s ease;cursor:pointer;border:none;}
+    .btn-primary{background:var(--accent);color:#000;box-shadow:0 12px 35px rgba(118,247,12,.35);}
+    .hero{padding:120px 0 90px;}
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center;}
+    .eyebrow{display:inline-flex;align-items:center;gap:10px;background:#f6ffe9;border:1px solid #dff5bf;padding:10px 18px;border-radius:999px;font-size:.9rem;margin-bottom:28px;font-weight:600;}
+    .hero h1{font-size:clamp(3rem,8vw,6.2rem);line-height:.95;letter-spacing:-0.07em;margin-bottom:28px;}
+    .hero p{font-size:1.15rem;color:var(--muted);max-width:650px;margin-bottom:40px;}
+    .hero-card{background:#fff;border:1px solid var(--border);border-radius:36px;padding:38px;box-shadow:var(--shadow);}
+    .price{font-size:4rem;font-weight:800;letter-spacing:-0.06em;line-height:1;margin:12px 0;}
+    .section{padding:110px 0;}
+    .section-title{text-align:center;max-width:900px;margin:0 auto 70px;}
+    .section-title h2{font-size:clamp(2.3rem,5vw,4.6rem);line-height:1;letter-spacing:-0.06em;margin-bottom:24px;}
+    .section-title p{color:var(--muted);font-size:1.05rem;}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+    .card{background:#fff;border:1px solid var(--border);border-radius:28px;padding:34px;transition:.4s ease;box-shadow:0 8px 30px rgba(0,0,0,.03);}
+    .card h3{margin:18px 0 12px;font-size:1.35rem;letter-spacing:-0.03em;}
+    .card p{color:var(--muted);}
+    .emoji{font-size:2rem;}
+    footer{padding:80px 0;border-top:1px solid var(--border);}
+    @media(max-width:1024px){.hero-grid,.grid-3{grid-template-columns:1fr;}}
+    @media(max-width:768px){nav{height:auto;padding:20px 0;flex-direction:column;gap:20px;}.nav-links{flex-wrap:wrap;justify-content:center;}.hero h1{font-size:3.5rem;}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <div class="logo">
+        <div class="logo-dot"></div>
+        AAROH: The Creator Forge
+      </div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#pricing">Pricing</a>
+        <a class="btn btn-primary" href="https://superprofile.bio/course/0e4fb153-fbbf-4f34-a086-009d912ff1c2" target="_blank">🚀 Book Session</a>
+      </div>
+    </nav>
+  </div>
+</header>
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">✨ Premium Creator Transformation Program</div>
+        <h1>Build Like A Creator.<br>Think Like A Founder.</h1>
+        <p>AAROH: The Creator Forge is an advanced creator operating system designed for modern creators, editors, designers, and storytellers.</p>
+        <a class="btn btn-primary" href="https://superprofile.bio/course/0e4fb153-fbbf-4f34-a086-009d912ff1c2" target="_blank">🚀 Reserve Your Seat</a>
+      </div>
+      <div class="hero-card">
+        <h2 style="font-size:2.6rem;line-height:1.05;letter-spacing:-0.05em;">The future of creator education starts here.</h2>
+        <div class="price">₹13,779</div>
+        <p style="margin-bottom:30px;color:var(--muted);">Practical systems, creator psychology, AI workflows, branding, monetization, and storytelling frameworks.</p>
+        <a class="btn btn-primary" style="width:100%;" href="https://superprofile.bio/course/0e4fb153-fbbf-4f34-a086-009d912ff1c2" target="_blank">🔥 Book Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-title">
+      <h2>Not another course.<br>A complete creator evolution.</h2>
+      <p>Learn storytelling, branding, AI workflows, editing systems, psychology-driven content creation, monetization, and creator business strategy.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <div class="emoji">🎬</div>
+        <h3>Storytelling Systems</h3>
+        <p>Learn how high-performing creators structure emotions, hooks, and narratives that hold attention.</p>
+      </div>
+      <div class="card">
+        <div class="emoji">🧠</div>
+        <h3>Creator Psychology</h3>
+        <p>Understand attention, behavioral triggers, creator identity, positioning, and audience psychology deeply.</p>
+      </div>
+      <div class="card">
+        <div class="emoji">🤖</div>
+        <h3>AI Powered Workflows</h3>
+        <p>Build scalable content systems using AI tools, automation, and creative production frameworks.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <p style="color:#5f6672;text-align:center;">AAROH: The Creator Forge • Creator Systems • Storytelling • AI • Branding</p>
+  </div>
+</footer>
+</body>
+</html>
